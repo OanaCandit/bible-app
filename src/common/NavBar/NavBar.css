@@ -1,0 +1,58 @@
+.custom-navbar {
+  background-color: rgb(105, 72, 80);
+  padding: 0.5rem;
+  margin: 0.7rem;
+  border-radius: 0.5rem;
+  color: #000;
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  left: 35%;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.custom-navbar ul li:first-of-type {
+  display: flex;
+}
+
+.custom-navbar ul li:last-of-type {
+  color: rgb(255, 255, 255);
+  flex: 1;
+  text-align: end;
+}
+
+.custom-navbar ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#dropdown-basic {
+  background-color: rgb(245, 236, 236);
+  color: rgb(110, 74, 74);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mobile-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorite-icon .favorite-count {
+  margin-left: 5px;
+  font-size: 1rem;
+  color: #fff;
+}

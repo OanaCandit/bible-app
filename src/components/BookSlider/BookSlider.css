@@ -1,0 +1,74 @@
+:root {
+  --slider-color: rgb(110, 65, 65);
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: rgba(110, 65, 65, 0.123) 2px solid;
+  border-radius: 0.5rem;
+  background-color: rgb(250, 248, 237);
+  position: absolute;
+  bottom: 5%;
+  z-index: 1;
+  width: 50%;
+  left: 25%;
+  cursor: grab;
+  user-select: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--slider-color) transparent;
+}
+
+.slider-container.active {
+  cursor: grabbing;
+}
+
+.slider-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+  background-color: var(--slider-color);
+  border-radius: 4px;
+}
+
+.slider-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider-item {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 10px;
+  color: var(--slider-color);
+  padding: 2px;
+  text-align: center;
+  user-select: none;
+  position: relative;
+  padding-bottom: 5px; /* Add padding to ensure space for the icon */
+}
+
+.slider-item:hover {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.slider-item.selected {
+  font-weight: bold;
+}
+
+.favorite-icon {
+  position: absolute;
+  bottom: 5px; /* Position at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  color: #d19494;
+  opacity: 1; /* Keep the hearts displayed */
+}
+
+.favorite-icon svg {
+  width: 10px;
+  height: 10px;
+}
